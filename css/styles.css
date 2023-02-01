@@ -1,0 +1,350 @@
+/* ==========VARIABLES */
+:root {
+--primary-color: #2E2F42;
+--main-text-color: #434455;
+--logo-btn-color: #4D5AE5;
+--main-inverse-color: #FFFFFF;
+--secondary-inverse-color: #E7E9FC;
+--accent-color: #404BBF;
+--logo-inverse-color: #F4F4FD;
+--secondary-bg-color: #F4F4FD;
+}
+
+.menu {
+    list-style: none
+}
+
+.link {
+    text-decoration: none;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+ul, 
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: var(--main-text-color);   
+    font-family: Roboto, sans-serif;       
+}
+
+.container {    
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1158px;
+}
+.hero-title, .secondary-title, .subtitle  {
+    color: var(--primary-color);  
+}
+
+.subtitle {
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+
+.button {
+    font-family: inherit;
+    letter-spacing: 0.04em
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* ==========HEADER== */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--secondary-inverse-color);
+}
+
+/* ==========NAVIGATION */
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    margin-right: 76px;
+
+    color: var(--primary-color);
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;       
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+}
+
+.web {
+    color: var(--logo-btn-color);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list .menu:not(:last-child) {
+    margin-right: 40px;
+
+}
+
+.nav-list .link {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;      
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus,
+.address-list .link:hover,
+.address-list .link:focus {
+    color: var(--accent-color);
+}
+
+/* ==========CONTACTS */
+
+.address-list {
+    display: flex;
+    align-items: center;
+}
+
+.address-list .menu:not(:first-child) {
+    margin-left: 40px;
+}
+
+.address .link{     
+    color: var(--main-text-color);
+    font-style: normal;
+    font-size: 16px; 
+    line-height: 1.5;       
+    letter-spacing: 0.02em;
+}
+
+/* ==========HERO SECTION */
+
+.hero-section {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.hero-container  {
+    padding: 188px 315px;  
+   
+}
+
+.hero-title {
+    margin-bottom: 48px;
+
+    color: var(--main-inverse-color);          
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;    
+    letter-spacing: 0.02em;  
+}
+
+.hero-section .button {   
+    padding: 16px 32px;
+
+    color: var(--main-inverse-color);
+    background-color: var(--logo-btn-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+    border: transparent;
+    border-radius: 4px;
+}
+.hero-section .button:hover,
+.hero-section .button:focus {
+    background-color: var(--accent-color);
+}
+
+/* ==========STRATEGY-SECTION */
+
+.strategy-container .str-list {
+    display: flex;  
+    padding-top: 120px;   
+}
+
+.str-list .menu:not(:first-child) {
+    margin-left: 24px;
+}
+
+
+.text {
+    color: var(--main-text-color);    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;        
+  }
+
+/* ==========SERVICES SECTION */
+
+.services-section,
+.team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.services-container .list {
+    display: flex;
+}
+
+.services-list .menu:not(:first-child) {
+margin-left: 24px;
+}
+
+.secondary-title {
+    margin-bottom: 72px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;      
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+/* ==========TEAM SECTION */
+
+.team-section {
+    background-color: var(--secondary-bg-color);
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-list .menu:not(:first-child) {
+    margin-left: 24px;
+}
+
+.team-list h3, 
+.team-list p {
+    text-align: center;
+}
+
+/* ==========FOOTER */
+
+.footer-section {
+    color: var(--secondary-inverse-color);
+    background-color: var(--primary-color);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
+ }
+
+.footer-text {
+    width: 264px;
+}
+
+.footer-section .logo-link {
+    color: var(--logo-inverse-color);
+    margin-bottom: 16px;   
+}
+  
+/* ==========PORTFOLIO */
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+
+.filter-list .menu:not(:last-child) {
+    margin-right: 24px;
+}
+
+.filter-list .button {
+    padding: 12px 24px;
+    color: var(--logo-btn-color);
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--secondary-inverse-color);
+    border-radius: 4px;
+    cursor: pointer;           
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;  
+    
+}
+
+.filter-list .button:hover,
+.filter-list .button:focus {
+    color: var(--main-inverse-color);
+    background-color: var(--accent-color);
+   
+}
+
+.information-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;  
+    margin-top: -48px;
+    margin-left: -24px;
+}
+
+.card-thumb {
+   
+    margin-top: 48px;
+    margin-left: 24px;
+}
+
+.information .link {
+    color: var(--primary-color);
+}
+
+.card-content {
+    padding: 32px 16px;
+    border-right: 1px solid var(--secondary-inverse-color);
+    border-bottom: 1px solid var(--secondary-inverse-color);;
+    border-left: 1px solid var(--secondary-inverse-color);;
+}
