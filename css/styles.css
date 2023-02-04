@@ -224,43 +224,27 @@ body {
 }
 
 .strategy-container .str-list {
-    display: flex;  
-      
+    display: flex;     
 }
 
 .str-list .menu:not(:first-child) {
     margin-left: 24px;
 }
 
-
-.str-list .menu::before {
-    content: "";
-    display: block;
+.str-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 112px;
     background: #F4F4FD;
     border-radius: 4px;
-    background-size: 64px 64px;
-    background-repeat: no-repeat;
-    background-position: center;
     margin-bottom: 8px;
 }
 
-.str-list .menu:nth-child(1)::before {
-    background-image: url(../images/antenna.svg);
+.str-icon {
+    width: 64px;
+    height: 64px;
 }
-
-.str-list .menu:nth-child(2)::before {
-    background-image: url(../images/clock.svg);
-}
-
-.str-list .menu:nth-child(3)::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.str-list .menu:nth-child(4)::before {
-    background-image: url(../images/astronaut.svg);
-}
-
 
 /* ==========SERVICES SECTION */
 
